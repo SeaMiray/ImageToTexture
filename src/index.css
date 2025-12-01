@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DotGothic16', 'Inter', sans-serif;
+  -webkit-font-smoothing: none;
+  /* Sharper text for retro feel */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0c0a09;
+  /* brown-950 */
+  color: #e7e5e4;
+  /* brown-200 */
+}
+
+/* Pixelated rendering for retro feel */
+.image-pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1917;
+  /* brown-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #44403c;
+  /* brown-700 */
+  border-radius: 0;
+  /* Sharp corners for retro */
+  border: 1px solid #57534e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #57534e;
+  /* brown-600 */
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: #44403c;
+  /* brown-700 */
+  border-radius: 0;
+  border: 1px solid #292524;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -7px;
+  /* center thumb */
+  width: 10px;
+  height: 18px;
+  border-radius: 0;
+  background: #d97706;
+  /* accent-DEFAULT */
+  cursor: pointer;
+  border: 1px solid #1c1917;
+  /* brown-900 */
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #f59e0b;
+  /* accent-light */
+}
