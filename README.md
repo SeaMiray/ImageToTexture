@@ -1,4 +1,4 @@
-# Image to Material - Project README
+# Image to Texture - Project README
 
 写真の遠近歪みを補正してシームレスなテクスチャ素材を生成するWebアプリケーション
 
